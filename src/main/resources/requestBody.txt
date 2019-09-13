@@ -1,0 +1,20 @@
+POST localhost:8086/books/generateCSV
+POST localhost:8086/books/responseCSV
+
+Request Body:
+{
+  "authors": [
+    "Adam Smith",
+    "John Doe",
+    "David Williams"
+  ],
+  "genres": [
+    "adventure",
+    "history",
+    "comedy",
+    "thriller",
+    "fantasy"
+  ],
+  "startDate": 1980,
+  "endDate": 2020
+}

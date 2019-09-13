@@ -1,0 +1,20 @@
+create table genre(id INT(11) NOT NULL AUTO_INCREMENT, name VARCHAR(30) NOT NULL, PRIMARY KEY (id));
+create table author(id INT(11) NOT NULL AUTO_INCREMENT, name VARCHAR(30) NOT NULL, date_of_birth DATE, PRIMARY KEY (id));
+create table book (id INT(11) NOT NULL AUTO_INCREMENT, name VARCHAR(30) NOT NULL, creation_year INT(4), genre_id INT(11) NOT NULL, author_id INT(11) NOT NULL, PRIMARY KEY (id));
+
+insert into genre(name) values('adventure');
+insert into genre(name) values('history');
+insert into genre(name) values('comedy');
+insert into genre(name) values('thriller');
+insert into genre(name) values('fantasy');
+insert into author(name, date_of_birth) values('Adam Smith', '1975-03-03');
+insert into author(name, date_of_birth) values('John Doe', '1985-05-05');
+insert into author(name, date_of_birth) values('David Williams', '1990-01-02');
+insert into book(name, creation_year, genre_id, author_id) values('Indiana Jones', 1991, 1, 1);
+insert into book(name, creation_year, genre_id, author_id) values('Napoleon Bonaparte', 2000, 2, 2);
+insert into book(name, creation_year, genre_id, author_id) values('The Hitchhikers', 1992, 3, 1);
+insert into book(name, creation_year, genre_id, author_id) values('Alien', 1995, 4, 1);
+insert into book(name, creation_year, genre_id, author_id) values('The Lord of the Rings', 1997, 5, 2);
+insert into book(name, creation_year, genre_id, author_id) values('King Kong', 1990, 1, 1);
+insert into book(name, creation_year, genre_id, author_id) values('Ancient Egypt', 2015, 2, 3);
+insert into book(name, creation_year, genre_id, author_id) values('The Chronicles of Narnia', 2010, 5, 3);
